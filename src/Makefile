@@ -3,7 +3,6 @@ PROGNAME=fd1d_heat_explicit
 MODULES=Types_mod RHS_mod CFL_mod IO_mod Solver_mod
 MOD_FILES = $(MODULES:=.f90)
 OBJ_FILES = $(MOD_FILES:.f90=.o)
-MOD_HEADERS = $(MOD_FILES:.f90=.mod)
 
 test : main
 	diff h_test01.txt h_test01.txt_bak
